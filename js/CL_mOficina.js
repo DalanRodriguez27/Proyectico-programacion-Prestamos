@@ -33,8 +33,8 @@ export default class CL_mOficina{
         }
 
         if(prestamos.monto < this.menorPrestamo) {
-            this.menorPrestamo = prestamo.monto;
-            this.nombreClienteMenorPrestamo = prestamo.nombreCliente;
+            this.menorPrestamo = prestamos.monto;
+            this.nombreClienteMenorPrestamo = prestamos.nombreCliente;
         }
 
         

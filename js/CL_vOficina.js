@@ -13,7 +13,7 @@ export default class CL_vOficina{
 
     procesarPrestamo(){
         this.mPrestamos = new CL_mPrestamos({
-            nombre: this.vPrestamos.nombre,
+            nombreCliente: this.vPrestamos.nombre,
             codigoPrestamo: this.vPrestamos.codigoPrestamo,
             monto: this.vPrestamos.monto,
             cantidadMeses: this.vPrestamos.cantidadMeses
@@ -24,10 +24,10 @@ export default class CL_vOficina{
         this.montoFinal.innerHTML = montoFinal;
         this.cantidadClientesPorDosMeses.innerHTML = cantidadClientesPorDosMeses;
         this.clienteMenorPrestamo.innerHTML = clienteMenorPrestamo;
-        this.vPrestamo.inNombreCliente.value = "";
-        this.vPrestamo.inCodigoPrestamo.value = "";
-        this.vPrestamo.inMonto.value = "";
-        this.vPrestamo.inCantidadMeses.value = "";
+        this.vPrestamos.inNombreCliente.value = "";
+        this.vPrestamos.inCodigoPrestamo.value = "";
+        this.vPrestamos.inMonto.value = "";
+        this.vPrestamos.inCantidadMeses.value = "";
 
     }
 }
