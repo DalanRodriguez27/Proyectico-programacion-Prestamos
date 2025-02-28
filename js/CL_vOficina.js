@@ -18,6 +18,7 @@ export default class CL_vOficina{
             monto: this.vPrestamos.monto,
             cantidadMeses: this.vPrestamos.cantidadMeses
         })
+        return this.mPrestamos;
     }
 
     reporteOficina(montoFinal, cantidadClientesPorDosMeses, clienteMenorPrestamo){
