@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="inputs_section">
+        <input type="text" id="inNombreCliente_input" placeholder="Ingrese el nombre del cliente">
+        <input type="text" id="inCodigoPrestamo_input" placeholder="Ingrese el codigo del prestamo">
+        <input type="text" id="inMonto_input" placeholder="Ingrese el monto del prestamo">
+        <input type="text" id="inCantidadMeses_input" placeholder="Ingrese la cantidad de meses del prestamo">
+        <button id="btnProcesar">Procesar prestamo</button>
+    </section>
+    <section id="salidas">
+        <p>
+            Monto final disponible: <span id="montoFinal">?</span>
+        </p>
+        <p>
+            Cantidad de clientes que pidieron por 2 meses: <span id="cantidadClientesPorDosMeses">?</span>
+        </p>
+        <p>
+            Cliente que pidio el menor prestamo: <span id="clienteMenorPrestamo">?</span>
+        </p>
+    </section>
+</body>
+<script type="module">
+    import CL_Principal from "./js/CL_Principal.js";
+    new CL_Principal()
+</script>
+</html>
